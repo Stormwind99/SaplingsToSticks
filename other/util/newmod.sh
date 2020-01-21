@@ -11,9 +11,11 @@ fi
 
 # Config
 SRC=ModTemplate
-MCVER=1.12.2
-FORGEVER=14.23.4.2739
-MAPPINGVER=snapshot_20180720
+MCVER=1.14.4
+FORGEVER="28.1.115"
+FORGELOADERVER="28"
+MAPPINGVER_CHANNEL="snapshot"
+MAPPINGVER_VERSION="20200104-1.14.3"
 GITHUBUSER=Stormwind99
 BINTRAYUSER=stormwind
 GROUPDOT="com.wumple"
@@ -100,7 +102,9 @@ $TEST sed \
        	-e "s/BINTRAYUSER/${BINTRAYUSER}/g" \
 	-e "s/MCVER/${MCVER}/g" \
 	-e "s/FORGEVER/${FORGEVER}/g" \
-	-e "s/MAPPINGVER/${MAPPINGVER}/g" \
+	-e "s/FORGELOADERVER/${FORGELOADERVER}/g" \
+	-e "s/MAPPINGVER_CHANNEL/${MAPPINGVER_CHANNEL}/g" \
+	-e "s/MAPPINGVER_VERSION/${MAPPINGVER_VERSION}/g" \
 	-e "s/GROUPDOT/${GROUPDOT}/g" \
 	-i build.properties
 
@@ -122,10 +126,9 @@ $TEST git commit -m "Initial commit"
 $TEST cd ../${NAME}
 
 # run forgegradle steps
-echo "Run forgegradle steps: setupDecompWorkspace eclipse..."
+echo "Run forgegradle steps: genEclipseRuns..."
 
-$TEST ./gradlew.bat setupDecompWorkspace
-$TEST ./gradlew.bat eclipse
+$TEST ./gradlew.bat genEclipseRuns
 
 # Done
 

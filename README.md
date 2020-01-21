@@ -1,6 +1,6 @@
 # ModTemplate
 
-This is an automated Minecraft Forge mod template.
+This is an automated Minecraft Forge mod template based on the Forge MDK.
 
 Expected directory structure before run:
 * newmod.sh (from Git repo other/util/newmod.sh)
@@ -19,5 +19,5 @@ Running ```newmod.sh NewMod``` will then create:
 ## Notes
 
 * To debug:
-   * ```cp build/resources/main/mcmod.info src/resources/mcmod.info``` beforehand since debugger does not run build with gradle string replacement.  Then ```git checkout src/resources/mcmod.info``` afterward to revert back to generated mcmod.info template.
-   * Also comment out Gradle string replacements in Reference,java and uncomment the explicit string constants below it (since debug won't do the Gradle string replacement)
+   * ```cp build/resources/main/META-INF/mods.toml src/main/resources/META-INF/mods.toml``` beforehand since debugger does not run build with gradle string replacement.  Then ```git checkout src/main/resources/META-INF/mods.toml``` afterward to revert back to generated mcmod.info template.
+   * Also comment out Gradle string replacements in Reference.java and uncomment the explicit string constants below it (since debug won't do the Gradle string replacement)
