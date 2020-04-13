@@ -1,4 +1,4 @@
-package templatens.modtemplate;
+package com.wumple.saplingstosticks;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,14 +13,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLFingerprintViolationEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(Reference.MOD_ID)
-public class ModTemplate
+public class SaplingsToSticks
 {
 	public Logger getLogger()
 	{
 		return LogManager.getLogger(Reference.MOD_ID);
 	}
 	
-	public ModTemplate()
+	public SaplingsToSticks()
 	{
 		ModConfiguration.register(ModLoadingContext.get());
 

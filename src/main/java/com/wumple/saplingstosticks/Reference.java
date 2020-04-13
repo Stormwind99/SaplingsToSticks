@@ -1,4 +1,4 @@
-package templatens.modtemplate;
+package com.wumple.saplingstosticks;
 
 public class Reference
 {
@@ -16,8 +16,8 @@ public class Reference
 
     /*
     // debugger settings since no Gradle string replacement
-    public static final String MOD_ID = "modtemplate";
-    public static final String MOD_NAME = "ModTemplate";
+    public static final String MOD_ID = "saplingstosticks";
+    public static final String MOD_NAME = "SaplingsToSticks";
     public static final String BUILD = "99";
     public static final String MOD_VERSION = "9.9.9";
     public static final String DEPENDENCIES = "";

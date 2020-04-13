@@ -1,4 +1,4 @@
-package templatens.modtemplate;
+package com.wumple.saplingstosticks;
 
 import java.nio.file.Path;
 
