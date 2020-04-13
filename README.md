@@ -1,4 +1,4 @@
-# SaplingsToSticks
+# Saplings To Sticks
 
 Strip saplings to get sticks. That's it - nothing more.
 
